@@ -10,14 +10,15 @@ export const Flights = () => {
         padding: "0px 50px 0px 50px",
       }}
     >
-      <img
+      <Box
+        component="img"
         src={flight}
         alt="Flight"
-        style={{
+        sx={{
           width: "100%",
           height: "300px",
-          justifyContent: "center",
           display: "flex",
+          justifyContent: "center",
           borderRadius: "10px",
           backgroundSize: "cover",
         }}
