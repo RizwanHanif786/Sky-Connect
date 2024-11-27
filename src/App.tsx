@@ -3,7 +3,7 @@ import "./App.css";
 import { Flights } from "./components/Flights";
 
 function App() {
-  return <Flights />;
+  return <Flights/>;
 }
 
 export default App;

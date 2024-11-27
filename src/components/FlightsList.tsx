@@ -35,7 +35,7 @@ export const FlightsList = ({
         />
       ) : (
         <Box p={2}>
-          {formattedFlights && formattedFlights.length > 0 ? (
+          { formattedFlights?.length > 0 ? (
             formattedFlights.map((flight, index) => (
               <Card
                 key={index}
