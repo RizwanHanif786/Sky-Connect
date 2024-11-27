@@ -129,6 +129,7 @@ export const SkyFilters = () => {
                 {...params}
                 label="From"
                 variant="outlined"
+                placeholder="Type to search departure"
                 onChange={onAirportSearchInputChange}
                 value={query}
               />
@@ -144,6 +145,7 @@ export const SkyFilters = () => {
               <TextField
                 {...params}
                 label="To"
+                placeholder="Type to search destination"
                 variant="outlined"
                 onChange={onAirportSearchInputChange}
                 value={query}
