@@ -18,6 +18,7 @@ export function debounce<T extends (...args: any[]) => void>(
 }
 
 export const getFormattedDuration = (durationInMinutes: number) => {
+  console.log('durationInMinutes: ', durationInMinutes);
   return `${Math.floor(durationInMinutes / 60)} hr ${
     durationInMinutes % 60
   } min`;
@@ -31,6 +32,7 @@ export const getFormattedFlights = (flights: Data[]) => {
   if(flights?.length === 0) return [];
 
  return flights?.map((flight) => {
+  console.log('flight: ', flight);
     return {
       duration: getFormattedDuration(flight?.legs?.[0]?.durationInMinutes),
       price: flight?.price?.formatted,
