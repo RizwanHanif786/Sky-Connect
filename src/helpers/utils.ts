@@ -32,7 +32,6 @@ export const getFormattedFlights = (flights: Data[]) => {
   if(flights?.length === 0) return [];
 
  return flights?.map((flight) => {
-  console.log('flight: ', flight);
     return {
       duration: getFormattedDuration(flight?.legs?.[0]?.durationInMinutes),
       price: flight?.price?.formatted,

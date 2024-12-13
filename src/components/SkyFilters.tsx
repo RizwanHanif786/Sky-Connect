@@ -36,6 +36,7 @@ export const SkyFilters = () => {
   const onAirportSearchInputChange = debounce((e) => {
     updateAirportsLoading(true);
     setQuery(e.target.value);
+    console.log('e.target.value: ', e.target.value);
   }, 500);
 
   const updateOriginAirport = (
