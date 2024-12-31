@@ -26,7 +26,6 @@ export const PassengerSelector = ({ publishPassengers }: Props) => {
 
   const open = Boolean(anchorEl);
   const handleOpen = (event: React.MouseEvent<HTMLElement>) => {
-    console.log('event: ', event);
     setAnchorEl(event.currentTarget);
   };
   const onClose = () => {

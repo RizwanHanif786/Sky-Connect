@@ -18,7 +18,6 @@ export function debounce<T extends (...args: any[]) => void>(
 }
 
 export const getFormattedDuration = (durationInMinutes: number) => {
-  console.log('durationInMinutes: ', durationInMinutes);
   return `${Math.floor(durationInMinutes / 60)} hr ${
     durationInMinutes % 60
   } min`;
