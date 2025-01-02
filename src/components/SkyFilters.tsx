@@ -67,6 +67,7 @@ export const SkyFilters = () => {
   };
 
   const onTripModeChange = (e: SelectChangeEvent<string>) => {
+    console.log('e: ', e);
     setTripMode(e.target.value);
   };
 
@@ -86,6 +87,7 @@ export const SkyFilters = () => {
 
   const executeFlightSearch = () => {
     updateLoadingStatus(true);
+    console.log(filters, 'filters')
     setFlightsParams(filters);
   };
 
