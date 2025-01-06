@@ -20,7 +20,6 @@ export const FlightsList = ({
   const formattedFlights = useMemo(() => {
     publishLoading(false);
     if (data) {
-      console.log('data: ', data);
       return getFormattedFlights(data?.data?.itineraries);
     }
     return [];
