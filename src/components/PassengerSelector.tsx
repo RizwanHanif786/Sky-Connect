@@ -33,6 +33,7 @@ export const PassengerSelector = ({ publishPassengers }: Props) => {
   };
 
   const incrementPassengerCount = (type: PassengerType) => {
+    console.log('type: ', type);
     const updatedPassengers = {
       ...passengers,
       [type]: passengers[type] + 1,
@@ -43,6 +44,7 @@ export const PassengerSelector = ({ publishPassengers }: Props) => {
   };
 
   const decrementPassengerCount = (type: PassengerType) => {
+    console.log('type: ', type);
     const updatedPassengers = {
       ...passengers,
       [type]: Math.max(0, passengers[type] - 1),
@@ -56,6 +58,7 @@ export const PassengerSelector = ({ publishPassengers }: Props) => {
 
   const totalPassengers =
     passengers.adults + passengers.children + passengers.infants;
+    console.log('totalPassengers: ', totalPassengers);
 
   return (
     <>
