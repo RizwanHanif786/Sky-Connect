@@ -51,7 +51,7 @@ export const PassengerSelector = ({ publishPassengers }: Props) => {
     };
     setPassengers((prev) => ({
       ...prev,
-      [type]: Math.max(0, prev[type] - 1), // Ensure no negative values
+      [type]: Math.max(0, prev[type] - 1),
     }));
     publishPassengers(updatedPassengers);
   };
